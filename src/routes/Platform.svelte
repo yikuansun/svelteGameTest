@@ -9,6 +9,16 @@
     export let height = 100;
 </script>
 
-<rect width={width} height={height} x={x} y={y} style="fill: green;" />
+
+<div
+    style="
+        position: absolute;
+        width: {width}px;
+        height: {height}px;
+        top: {y}px;
+        left: {x}px;
+        background-color: green;
+    "
+></div>
 
 <svelte:options accessors={true} />

@@ -68,6 +68,18 @@
     };
 </script>
 
-<rect width={width} height={height} x={x} y={y} style="fill: navyblue;" rx={10} ry={10} />
+<div
+    style="
+        position: absolute;
+        width: {width}px;
+        height: {height}px;
+        top: {y}px;
+        left: {x}px;
+        background-color: darkblue;
+        border-radius: 15px;
+        border: 5px solid darkslateblue;
+        box-sizing: border-box;
+    "
+></div>
 
 <svelte:options accessors={true} />

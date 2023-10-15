@@ -35,9 +35,9 @@
     });
 </script>
 
-<svg width={gameWidth} height={gameHeight} style="background-color: deepskyblue;">
+<div style="background-color: deepskyblue; width: {gameWidth}px; height: {gameHeight}px; position: relative;">
     <Player bind:this={playerObject} platforms={platforms}></Player>
     {#each platformsData as plat, i}
         <Platform x={plat.x} y={plat.y} width={plat.width} height={plat.height} bind:this={platforms[i]}></Platform>
     {/each}
-</svg>
+</div>
