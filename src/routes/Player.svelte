@@ -60,9 +60,8 @@
             y += velocityY;
             if (touchingGround()) {
                 y -= velocityY;
-                velocityY = 0;
-
-                if (keysDown["ArrowUp"]) velocityY = -15;
+                if (keysDown["ArrowUp"] && velocityY >= 0) velocityY = -15;
+                else velocityY = 0;
             }
         }
         else y += velocityY;
